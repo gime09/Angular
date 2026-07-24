@@ -1,0 +1,37 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <h1>Héroe: <small class="text-primary">{{ name() }}</small></h1>
+
+      <h3>Capitalizado: <small class="text-success">{{ capitalizedName }}</small></h3>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Nombre:</strong> {{ name() }}</li>
+        <li class="list-group-item"><strong>Edad:</strong> {{ age() }}</li>
+
+        <li class="list-group-item"><strong>Descripción:</strong> {{ heroDescription() }}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-12 d-flex gap-2">
+      <button class="btn btn-primary" (click)="changeHero()">
+        Cambiar Héroe
+      </button>
+
+      <button class="btn btn-warning" (click)="changeAge()">
+        Cambiar Edad a 60
+      </button>
+
+      <button class="btn btn-danger" (click)="resetForm()">
+        Resetear Formulario
+      </button>
+    </div>
+  </div>
+</div>
